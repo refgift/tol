@@ -2,8 +2,10 @@ BEGIN
 	OUTPUT BLUE;
 	OUTPUT "Tolstoy Vigilance"
 	OUTPUT NEWLINE;
-	OUTPUT RED;
+	OUTPUT MAGENTA;
 	OUTPUT "(C) Copyright 2026 Larry B. Daniel, Atlanta Ga."
+	OUTPUT NEWLINE;
+	OUTPUT "Maximum return / Minimum effort spent / Perfect leverage found"
 	OUTPUT NEWLINE;
 	OUTPUT CLEAR;
 
