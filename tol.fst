@@ -5,7 +5,7 @@ BEGIN
 	OUTPUT MAGENTA;
 	OUTPUT "(C) Copyright 2026 Larry B. Daniel, Atlanta Ga."
 	OUTPUT NEWLINE;
-	OUTPUT "Maximum return / Minimum effort spent / Perfect leverage found"
+	OUTPUT "Guardians on watch / Looking five steps down the road / Shadows have no place"
 	OUTPUT NEWLINE;
 	OUTPUT CLEAR;
 
@@ -37,10 +37,12 @@ S1:	YIELD;
 	IF RND = 1 THEN	ACCUMULATOR := 100;
 	JUMP S1;
 
-S2:	IF RND = 5 THEN ACCUMULATOR := 150;
+S2:	YIELD;	
+	IF RND = 5 THEN ACCUMULATOR := 150;
 	JUMP S1;
 
-S3:	IF RND = 3 THEN ACCUMULATOR := COMMUNIST;
+S3:	YIELD;	
+	IF RND = 3 THEN ACCUMULATOR := COMMUNIST;
 
 	IF ACCUMULATOR = COMMUNIST THEN 
 	BEGIN
