@@ -5,7 +5,7 @@ BEGIN
 	OUTPUT MAGENTA;
 	OUTPUT "(C) Copyright 2026 Larry B. Daniel, Atlanta Ga."
 	OUTPUT NEWLINE;
-	OUTPUT "Guardians on watch / Looking five steps down the road / Shadows have no place"
+	OUTPUT "Active vigilance / Foresight guides the heavy hand / Future is secure"
 	OUTPUT NEWLINE;
 	OUTPUT CLEAR;
 
@@ -28,9 +28,7 @@ S0:	YIELD;
 S1:	YIELD;
 	
 	RND := RANDOM;
-	IF RND < 1 THEN RND := 0; 
-	RND := RND % 9;
-	IF RND = 0 THEN RND := 9;
+	RND := ROOT;
 
 	IF ACCUMULATOR = 100 THEN JUMP S2; 
 	IF ACCUMULATOR = 150 THEN JUMP S3; 
