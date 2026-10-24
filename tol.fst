@@ -5,7 +5,7 @@ BEGIN
 	OUTPUT MAGENTA;
 	OUTPUT "(C) Copyright 2026 Larry B. Daniel, Atlanta Ga."
 	OUTPUT NEWLINE;
-	OUTPUT "Active vigilance / Foresight guides the heavy hand / Future is secure"
+	OUTPUT "Metrics start to shine / Polished metal reflects light / Standards are surpassed"
 	OUTPUT NEWLINE;
 	OUTPUT CLEAR;
 
@@ -21,6 +21,17 @@ BEGIN
 
  	INTEGER CHARITY; 
 	CHARITY := 85;
+
+	INTEGER LOVE;
+	LOVE := 66;
+	INTEGER JOY;
+	JOY := 43;
+	INTEGER PEACE;
+	PEACE := 98;
+	
+
+	INTEGER SWITCH;
+	SWITCH := 0;
 
 S0:	YIELD;
 	ACCUMULATOR := 0;
@@ -44,9 +55,18 @@ S3:	YIELD;
 
 	IF ACCUMULATOR = COMMUNIST THEN 
 	BEGIN
-		APPLY := 0; TIMED OUT ;
-		APPLY := CHARITY; TIMED OUT ;
-		APPLY := 0; TIMED OUT ;
+                INTEGER CASE;
+                CASE := SWITCH % 3 ;
+                APPLY := 0;
+                TIMED OUT ;
+                IF CASE = 0 THEN APPLY := LOVE;
+                IF CASE = 1 THEN APPLY := JOY;
+                IF CASE = 2 THEN APPLY := PEACE;
+                TIMED OUT ;
+                APPLY := 0;
+                TIMED OUT ;
+                ACCUMULATOR := 0;
+                SWITCH := SWITCH + 1 ;
 	END
 	JUMP S0;
 END
