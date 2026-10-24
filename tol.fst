@@ -5,7 +5,7 @@ BEGIN
 	OUTPUT MAGENTA;
 	OUTPUT "(C) Copyright 2026 Larry B. Daniel, Atlanta Ga."
 	OUTPUT NEWLINE;
-	OUTPUT "Metrics start to shine / Polished metal reflects light / Standards are surpassed"
+	OUTPUT " Pride within the craft / Sharp edges aligned to true / Better than before";
 	OUTPUT NEWLINE;
 	OUTPUT CLEAR;
 
@@ -22,12 +22,12 @@ BEGIN
  	INTEGER CHARITY; 
 	CHARITY := 85;
 
-	INTEGER LOVE;
-	LOVE := 66;
-	INTEGER JOY;
-	JOY := 43;
-	INTEGER PEACE;
-	PEACE := 98;
+	INTEGER REAL;
+	REAL := 52;
+	INTEGER SOFT;
+	SOFT := 50;
+	INTEGER THIS;
+	THIS := 74;
 	
 
 	INTEGER SWITCH;
@@ -59,9 +59,9 @@ S3:	YIELD;
                 CASE := SWITCH % 3 ;
                 APPLY := 0;
                 TIMED OUT ;
-                IF CASE = 0 THEN APPLY := LOVE;
-                IF CASE = 1 THEN APPLY := JOY;
-                IF CASE = 2 THEN APPLY := PEACE;
+                IF CASE = 0 THEN APPLY := THIS;
+                IF CASE = 1 THEN APPLY := REAL;
+                IF CASE = 2 THEN APPLY := SOFT;
                 TIMED OUT ;
                 APPLY := 0;
                 TIMED OUT ;
