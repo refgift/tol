@@ -5,8 +5,6 @@ BEGIN
 	OUTPUT MAGENTA;
 	OUTPUT "(C) Copyright 2026 Larry B. Daniel, Atlanta Ga."
 	OUTPUT NEWLINE;
-	OUTPUT " Pride within the craft / Sharp edges aligned to true / Better than before";
-	OUTPUT NEWLINE;
 	OUTPUT CLEAR;
 
 	INTEGER RND;
